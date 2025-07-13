@@ -17,6 +17,11 @@ body{
 }
 .subtitle{
     color: #4E4E4E;
+    padding: 10px 0;
+}
+.card-title{
+    font-size: 2em;
+    margin-top: 10px;
 }
 .sh-button{
     border: none;
@@ -26,6 +31,7 @@ body{
     font-size: 1.5em;
     border-radius: 5px;
     transition: 1s;
+    margin-bottom: 20px;
 }
 .sh-button:hover{
     background-color: tomato;
@@ -36,21 +42,27 @@ body{
 
 header{
     max-width: 100%;
+    
 }
 .header-container{
     height: 100vh;
     margin-top: 50px;
 }
 nav{
+    position: fixed;
+    top: 0;
     width: 80%;
     margin: auto;
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: lightgray;
-    padding: 5px 20px;
+    padding: 5px 30px;
     border-radius: 10px;
-    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+
 }
 .nav-search{
     
@@ -147,7 +159,7 @@ nav .faa , nav .fa{
 .hero-container{
     width: 100%;
     
-    margin-top: 80px;
+    margin-top: 100px;
 }
 .hero-content{
     width: 80%;
@@ -168,7 +180,7 @@ nav .faa , nav .fa{
     font-size: 1.4em;
     margin-bottom: 10px;
 }
-.hero-text .hero-price{
+.hero-price{
     color: rgb(216, 133, 119);
     margin-bottom: 50px;
     font-size: 3em;
@@ -181,4 +193,78 @@ nav .faa , nav .fa{
     width: 80%;
     background-position: center;
     background-size: cover;
+}
+
+/* -----main Part  */
+main{
+    width: 100%;
+
+}
+.main-container{
+    width: 80%;
+    margin: auto;
+}
+.cateories-shops{
+    margin-bottom: 50px;
+}
+.shops-txt{
+    font-size: 3.8em;
+    padding: 12px 22px;
+    color: #574a4add;
+}
+.shops-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop-part{
+    display: flex;
+    align-items: center;
+    width: 28%;
+    margin: auto;
+    justify-content: space-around;
+    background: linear-gradient(to right, #a3d5d8, #e4c279);
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.shop-part:hover{
+    transform: scale(1.1);
+}
+.shop-part .shop-text{
+    font-size: 3em;
+}
+
+/* ---Shoes Part  */
+.shoes-shops{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.shoes-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stp{
+    font-size: 2em;
+    padding: 12px 22px;
+    color: tomato;
+}
+.shoes-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+}
+.shoes-card{
+    background-color: lightblue;
+    padding: 8px 15px;
+    width: 28%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 1px black;
+}
+
+.shoes-card img{
+    width: 100%;
 }
