@@ -268,3 +268,56 @@ main{
 .shoes-card img{
     width: 100%;
 }
+
+
+/* ------Foter Part  */
+
+/* ---Login Form --  */
+footer{
+
+}
+.form-container{
+    background-color: #4E4E4E;
+    width: 80%;
+    padding: 30px;
+    border-radius: 20px;
+    margin: auto;
+    color: white;
+}
+.login-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-text{
+    font-size: 3em;
+    color: lightgray;
+}
+.login-form input[type="text"],input[type="email"],input[type="password"], .login-form textarea{
+    width: 500px;
+    height: 50px;
+    display: block;
+    margin: 10px 0;
+    padding: 5px 20px;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
+.login-form label{
+    font-size: 1.4em;
+}
+
+input::placeholder{
+    
+}
+input:focus{
+}
+.login-form input[type="submit"], input[type="reset"]{
+    height: 50px;
+    width: 150px;
+    margin: 30px 60px;
+    padding: 10px 20px;
+    font-size: 1.4em;
+    background: linear-gradient(to right, #348756, #54b6ca);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
