@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda-Commerce-Project</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Michroma&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tektur:wght@400..900&display=swap"
+        rel="stylesheet">
+</head>
+
 <body>
     <header>
         <section class="header-container">
@@ -31,24 +40,49 @@
                 </div>
                 <i class="fa-solid fa fa-bars" onclick="showmenu()"></i>
             </nav>
+
+            <!-- ---hero part -->
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title tektur-fonts">Mi LED TV 4A PRO 32</h1>
+                        <p class="hero-subtitle subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                            sint. <br> Velit officia consequat duis enim velit mollit. <br>Exercitation veniam consequat sunt
+                            nostrud amet.</p>
+                        <h1 class="hero-price tektur-fonts ">$1289</h1>
+                        <button class="sh-button">BUY NOW <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                    <div class="hero-img">
+                        <img src="images/banner-images/tv.png" alt="">
+                    </div>
+                </div>
+            </div>
         </section>
     </header>
 
 
+    <!-- ---Main Section  -->
+    <main>
+
+    </main>
+
+
     <!-- ---Using JavaScript-- -->
-     <script>
-        
+    <script>
+
         var navLinks = document.getElementById("navLinks")
 
-        function showmenu(){
+        function showmenu() {
             navLinks.style.right = "0";
         }
-        function hidemenu(){
+        function hidemenu() {
             navLinks.style.right = "-200px";
             navLinks.style.transition = "1s";
         }
 
-        
-     </script>
+
+    </script>
 </body>
+
 </html>
