@@ -321,3 +321,56 @@ input:focus{
     color: rgb(255, 255, 255);
     border-radius: 10px;
 }
+
+
+/* -----Footer - Last Container  */
+.footer-container{
+    margin-top: 50px;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #657686;
+}
+.footer-parts{
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+.footer-part{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.f-parts{
+    width: 28%;
+}
+.f-parts p{
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: lightgray;
+}
+.discover-parts h3{
+    font-size: 1.6em;
+    margin-bottom: 20px;    
+}
+.discover-parts ul li{
+    list-style: none;
+    padding: 5px 0;
+}
+.discover-parts ul li a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: lightgray;
+}
+.contacts-parts h3{
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+.contacts-parts p{
+    color: lightgray;
+}
+.contacts-parts i{
+    color: rgb(223, 235, 109);
+    font-size: 1.3em;
+    margin: 5px 5px;
+    
+}
