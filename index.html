@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda-Commerce-Project</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 <body>
@@ -12,15 +13,15 @@
             <nav>
                 <div class="nav-logo">
                     <img src="images/logo.png" alt="">
-                    <h2>PANDA</h2>
                 </div>
 
                 <div class="nav-search">
-                    <input type="search" name="" placeholder="Search" id="">
+                    <input type="text" name="" placeholder=" Search" id="">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
 
                 <div class="nav-links" id="navLinks">
+                    <i class="fa-solid faa fa-xmark" onclick="hidemenu()"></i>
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Product</a></li>
@@ -28,8 +29,26 @@
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
+                <i class="fa-solid fa fa-bars" onclick="showmenu()"></i>
             </nav>
         </section>
     </header>
+
+
+    <!-- ---Using JavaScript-- -->
+     <script>
+        
+        var navLinks = document.getElementById("navLinks")
+
+        function showmenu(){
+            navLinks.style.right = "0";
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+            navLinks.style.transition = "1s";
+        }
+
+        
+     </script>
 </body>
 </html>
